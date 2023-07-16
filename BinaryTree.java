@@ -18,7 +18,7 @@ public class BinaryTree {
         root = new Node(n);
         populate(sc, root);
     }
-    public void populate(Scanner sc, Node node) {
+    private void populate(Scanner sc, Node node) {
         System.out.println("Do you want to add to the left of value: " + node.data);
         Boolean left = sc.nextBoolean();
         if(left) {
